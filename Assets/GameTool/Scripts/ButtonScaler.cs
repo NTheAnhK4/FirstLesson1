@@ -20,7 +20,7 @@ namespace GameTool
             sequence.Append(transform.DOScale(1.05f, 0.15f).SetUpdate(true))
                 .Append(transform.DOScale(0.95f, 0.1f).SetUpdate(true))
                 .Append(transform.DOScale(1f, 0.1f).SetUpdate(true));
-            AudioManager.Instance.Shot(eSoundName.ButtonClick);
+            //AudioManager.Instance.Shot(eSoundName.ButtonClick);
         }
     }
 }
