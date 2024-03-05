@@ -22,7 +22,8 @@ public class Bullet : BasePooling
     {
         if (other.gameObject.CompareTag("Block"))
         {
-           
+            var block = other.gameObject.GetComponent<Block>();
+            block.TakeDamage(1);
            
             gameObject.SetActive(false);
         }
